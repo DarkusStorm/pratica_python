@@ -1,5 +1,5 @@
 '''
-LAB 3.2.9
+# LAB 3.2.9
 
 # A solução a seguir faz com que a variável palavra exista apenas dentro do "while", e precisa do break para pará-la, visto que não há condição sendo verificada pela estrutura de repetição.
  while True:
@@ -23,11 +23,11 @@ LAB 3.2.9
 '''
 
 '''
- LAB 3.2.10
+# LAB 3.2.10
 
- palavra = input("Insira uma palavra: ").upper()
+palavra = input("Insira uma palavra: ").upper()
  
- for letra in palavra:
+for letra in palavra:
     if letra == "A":
         letra = " "
         continue
@@ -53,7 +53,7 @@ for letra in palavra:
 '''
 
 '''
-LAB 3.2.11
+# LAB 3.2.11
 
 palavra = input("Insira uma palavra: ").upper()
 letras_juntas = ""
@@ -67,7 +67,7 @@ print(letras_juntas)
 '''
 
 '''
-LAB 3.2.15
+# LAB 3.2.15
 
 etapas = 0
 c0 = int(input("Insira um número natural diferente de zero: "))
@@ -86,4 +86,28 @@ while c0 != 1:
           print(c0)
 
 print(f"etapas = {etapas}")
+'''
+
+'''
+# LAB 3.4.6
+
+lista_chapeu = [1, 2, 3, 4, 5] # Esta é uma lista atual de números ocultos no chapéu.
+
+print("Os números que fazem parte da lista são:", *lista_chapeu, end=".\n")
+
+# Etapa 1: escreva uma linha de código que solicita ao usuário que substitua o número do meio por um número inteiro inserido pelo usuário. 
+
+lista_chapeu[2] = int(input("Insira um número inteiro para substituir o terceiro elemento da lista: "))
+print("A nova lista é:", *lista_chapeu, end=".\n")
+
+# Etapa 2: escreva uma linha de código que remova o último elemento da lista.
+
+apagar = int(input("Digite 2 se quiser apagar o último elemento da lista: "))
+if apagar == 2:
+    lista_chapeu.pop()
+
+# Etapa 3: escreva uma linha de código que imprima o comprimento da lista atual.
+
+comprimento = len(lista_chapeu)
+print("O tamanho da lista atual é:", comprimento, end=".")
 '''
