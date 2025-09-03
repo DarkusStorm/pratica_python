@@ -61,20 +61,20 @@
 
 # LAB 3.2.15
 
-etapas = 0
-c0 = int(input("Insira um número natural diferente de zero: "))
+# etapas = 0
+# c0 = int(input("Insira um número natural diferente de zero: "))
 
-if c0 < 0:
-    int(input("Esse não é um número natural. Insira outro: "))
+# if c0 < 0:
+#    int(input("Esse não é um número natural. Insira outro: "))
 
-while c0 != 1:
-    if c0 % 2 == 0:
-        c0 = c0 // 2
-        etapas += 1
-        print(c0)
-    elif c0 % 2 != 0:
-        c0 = 3 * c0 + 1
-        etapas += 1
-        print(c0)
+# while c0 != 1:
+#     if c0 % 2 == 0:
+#          c0 = c0 // 2
+#          etapas += 1
+#          print(c0)
+#     elif c0 % 2 != 0:
+#          c0 = 3 * c0 + 1
+#          etapas += 1
+#          print(c0)
 
-print(f"Etapas = {etapas}")
+# print(f"Etapas = {etapas}")
