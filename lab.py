@@ -107,7 +107,6 @@ while c0 != 1:
           print(c0)
 
 print(f"etapas = {etapas}")
-
 '''
 
 '''
@@ -134,11 +133,32 @@ comprimento = len(lista_chapeu)
 print("O tamanho da lista atual é:", comprimento, end=".")
 '''
 
+'''
 # LAB 3.4.11
 
 beatles = []
+
+print("Etapa 1:", *beatles)
+
 beatles.append("John Lennon")
 beatles.append("Paul McCartney")
 beatles.append("George Harrison")
 
-print(*beatles, sep=", ", end=".")
+print("Etapa 2:", end=" "), print(*beatles, sep=", ", end=".\n")
+
+for membro in beatles:
+    adicionar = input("Você gostaria de adicionar Stu Sutcliffe e Pete Best à lista? ").lower()
+    if adicionar == "sim" or adicionar == "yes":
+        beatles.append("Stu Sutcliffe")
+        beatles.append("Pete Best")
+        print("Etapa 3:", end=" "), print(*beatles, sep=", ", end=".\n")
+        print("\nRemovendo-os da lista pela sua saída em 61 e 62...\n")
+        del beatles[2:4]
+        print("Etapa 4:", end=" "), print(*beatles, sep=", ", end=".\n")
+        continue
+    beatles.insert(0, "Ringo Starr")
+    print("\nEtapa 5:", end=" "), print(*beatles, sep=", ", end=".\n")
+    break
+
+print("The Fab", len(beatles), end="!")
+'''
