@@ -67,13 +67,34 @@ print(letras_juntas)
 '''
 
 '''
+# LAB 3.2.14
+
+# Solução por Miguel Moreira da Silva
+
+blocos = int(input("Insira o número de blocos: "))  
+
+altura = 0
+camada = 1
+
+while blocos >= camada:
+    blocos -= camada
+    altura += 1
+    camada += 1
+
+print("A altura da pirâmide é:", altura)
+'''
+
+'''
 # LAB 3.2.15
 
 etapas = 0
 c0 = int(input("Insira um número natural diferente de zero: "))
 
 if c0 < 0:
-    int(input("Esse não é um número natural. Insira outro: "))
+    c0 = int(input("Esse não é um número natural. Insira outro: "))
+
+if c0 == 0:
+    c0 = int(input("Esse número natural não é diferente de zero. Insira outro: "))
 
 while c0 != 1:
      if c0 % 2 == 0:
@@ -86,6 +107,7 @@ while c0 != 1:
           print(c0)
 
 print(f"etapas = {etapas}")
+
 '''
 
 '''
@@ -111,3 +133,12 @@ if apagar == 2:
 comprimento = len(lista_chapeu)
 print("O tamanho da lista atual é:", comprimento, end=".")
 '''
+
+# LAB 3.4.11
+
+beatles = []
+beatles.append("John Lennon")
+beatles.append("Paul McCartney")
+beatles.append("George Harrison")
+
+print(*beatles, sep=", ", end=".")
