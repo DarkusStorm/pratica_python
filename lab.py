@@ -154,6 +154,7 @@ for membro in beatles:
         print("Etapa 3:", end=" "), print(*beatles, sep=", ", end=".\n")
         print("\nRemovendo-os da lista pela sua saída em 61 e 62...\n")
         del beatles[2:4]
+        # ou "beatles.pop" duas vezes.
         print("Etapa 4:", end=" "), print(*beatles, sep=", ", end=".\n")
         continue
     beatles.insert(0, "Ringo Starr")
@@ -161,4 +162,20 @@ for membro in beatles:
     break
 
 print("The Fab", len(beatles), end="!")
+'''
+
+'''
+# LAB 3.6.6
+
+lista1 = [1, 2, 4, 4, 1, 4, 2, 6, 2, 9]
+lista2 = lista1[:]
+
+for num in lista1:
+    if num == num in lista2: # Lê cada número número da "lista1" e compara-o com os números da "lista2". Se forem iguais, ele o deleta (basicamente verifica se o número está repetido, mas usando a outra lista como parâmetro)
+        del [lista1[num]]
+
+lista1.sort()
+
+print("Lista original: ", end=""), print(*lista2, sep=", ", end=".\n")
+print("Lista com elementos exclusivos: ", end=""), print(*lista1, sep=", ", end=".")
 '''
